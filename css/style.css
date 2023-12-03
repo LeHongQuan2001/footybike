@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* header */
+header {
+  background-color: #1f1f1f;
+}
+.bg-dark {
+  --bs-bg-opacity: 0;
+}
+.navbar .nav-item .nav-link {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 25px;
+}
+.navbar .nav-item .nav-link:hover {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 25px;
+  background-color: indianred;
+}
+
+/* End header */
+
+body {
+  background-color: #1f1f1f;
+  height: 100%;
+}
+div.body {
+  background-color: #1f1f1f;
+}
+body.dark {
+  background-color: #121212;
+  color: #fff !important;
+}
+body.dark .calendar-matches li .day {
+  color: #fff !important;
+  text-decoration: none;
+}
+.calendar-matches li .day {
+  font-weight: 700;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  line-height: 34px;
+  padding: 0 35px;
+}
+.calendar-matches,
+.calendar-matches li {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+}
+
+.container {
+  background-color: #1f1f1f;
+}
+main.container.contentContain {
+  background-color: #121212;
+  width: 80%;
+}
+/* .day{
+    background-color: #fff;
+
+} */
+div.sv-box.undefined {
+  background-color: #121212;
+}
+main.container.contentContain {
+  background-color: #121212;
+}
+
+div.body {
+  background-color: #1f1f1f;
+  border-radius: 0px;
+  padding: 15px 10px 0px 100px;
+  text-decoration: none !important;
+}
+
+div.card-body {
+  color: #dfdfdf;
+}
+
+div.card-body:hover {
+  text-decoration-line: underline;
+}
+
+ul.competitions {
+  background-color: #121212;
+  width: auto;
+  padding: 10px 0 0 0;
+  border-radius: 0px;
+}
+
+ul.competitions {
+  position: relative;
+}
+
+span.competition-cell-status-name.btn.btn-sm.btn-ss {
+  position: absolute;
+  background-color: #bf0c3d;
+  color: #dfdfdf;
+  min-height: 35px;
+  min-width: 100px;
+  bottom: 5px;
+  right: 10px;
+}
+.competition-cell-side1 {
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 1px;
+}
+.competition-cell-table-cell {
+  display: table-cell;
+  padding: 5px 0;
+  margin: 0;
+  table-layout: fixed;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  position: relative;
+  overflow: hidden;
+}
+.competition-cell-table-cell .name {
+  vertical-align: middle !important;
+  font-weight: 500;
+}
+.competition-cell-status {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-top: 8px;
+  color: #c3c3c3;
+}
+body.dark .competition-cell-table,
+body.dark .navbar-nav .nav-link,
+body.dark .top-tournament .league-name {
+  color: #fff;
+}
+body.dark #event-tags,
+body.dark #event-tags a,
+body.dark .competition-cell-score,
+body.dark .event-status,
+body.dark .event-team h5 {
+  color: #fff;
+}
+.competition-cell-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  color: #00222e;
+  white-space: nowrap;
+  padding: 5px 0;
+}
+ul.competitions {
+  margin: 0px 10px 10px 10px;
+}
+ul {
+  list-style: none;
+}
+.competitions li:first-child .competition {
+  border-top: 0;
+}
+body.dark .competitions li .competition {
+  border-color: #404040;
+}
+span.competition-cell-table {
+  border-top: 1px dashed #eee;
+  border-color: #404040;
+}
+span.competition-cell-table:hover {
+  background-color: #1f1f1f;
+}
+.competition-cell-score {
+  width: 95px;
+  text-align: center;
+  color: #00222e;
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: 700;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+b {
+  color: #bf0c3e;
+}
+ul.competitions li:first-child.competition {
+  border-top: 0 dashed #eee;
+}
+div.sv-box.undefined.no-radius {
+  background-color: #1f1f1f;
+  border-radius: 10px 10px 0px 0px;
+  margin: 10px;
+}
+h6 {
+  padding: 20px 10px 10px 30px;
+}
+
+nav.navbar.navbar-expand-sm.navbar-light {
+  place-content: center;
+}

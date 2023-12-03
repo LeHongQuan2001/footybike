@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="googlebot" content="index,follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <title>Reddit Soccer Streams | Soccer Streams | The Original SoccerStreams</title>
+    <meta name="description"
+        content="The Original SoccerStreams from Reddit, a website by the founders of /r/SoccerStreams. Find live HD streams for every football match, Live scores, and more for FREE.">
+    <link rel="canonical" href="https://rsoccerstreams.net">
+    <link rel="alternate" href="https://rsoccerstreams.net" hreflang="x-default">
+    <link href="/css/app.css?v1.2ddd23d3asdd23" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico?s">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Soccer Streams",
+      "title": "Reddit Soccer Streams | Soccer Streams | The Original SoccerStreams",
+      "description":"The Original SoccerStreams from Reddit, a website by the founders of /r/SoccerStreams. Find live HD streams for every football match, Live scores, and more for FREE.",
+      "publisher":{"@id":"Soccer Streams"},
+      "url": "https://rsoccerstreams.net"
+    }
+    
+    
+    
+    
+        </script>
+    <style>
+        .headlines {
+            box-shadow: rgb(0 0 0 / 10%) 0 10px 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+        }
+
+        .headlines-item {
+            font-size: 14px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom-width: 1px;
+            border-bottom-color: #e7e7e7;
+            border-bottom-style: solid;
+            cursor: pointer;
+        }
+
+        .headlines-item p {
+            margin-bottom: 0;
+        }
+
+        .top-headline-item {
+            cursor: pointer;
+            display: flex;
+            margin-top: 20px;
+            transition: all .5s ease-in;
+            box-shadow: rgb(0 0 0 / 10%) 0 10px 50px;
+        }
+
+        .top-headlines-image-wrapper {
+            max-height: 167px;
+            min-height: 167px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .top-headlines-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .top-headline-article-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 10px;
+        }
+
+        .top-headline-article-data {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            font-size: 13px;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-family: sans-serif;
+        }
+
+        .top-headline-article-date {
+            font-size: 11px;
+            font-style: italic;
+            color: #a0a0a0;
+        }
+
+        .top-headline-article-title {
+            font-weight: 700;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .sv-box .body {
+            padding: 0;
+        }
+
+        #event-sticky-info .nav-pills>li>a.active,
+        #event-sticky-info .nav-pills>li>a.active:focus,
+        #event-sticky-info .nav-pills>li>a.active:hover {
+            background-color: unset;
+            border-bottom: 4px solid #bf0c3e;
+            color: #bf0c3e;
+            font-weight: 700;
+        }
+
+        .breadcrumbs {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        body.dark #event-sticky-info .nav-pills>li>a {
+            color: #fff;
+        }
+
+        .blog-content img,
+        #blog-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .container {
+                max-width: 1350px;
+            }
+
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .competition-cell-table {
+                width: 82%;
+            }
+        }
+
+        #backlinks a {
+            color: #fff;
+        }
+body.dark .navbar-nav .nav-link {
+    color: #b3994c;
+}
+.other-site .site-name {
+    font-weight: 700;
+    margin-top: 5px;
+    color: #b3994c;
+    text-decoration: none;
+}
+.other-site .icon {
+    background-color: #b3994c;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.other-site {
+    width: 100%;
+    padding: 5px 7px;
+    transition: all .5s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.other-site, .other-site:hover {
+    text-decoration: none;
+}
+li.chooseday{
+    background-color: #121212;
+    border-radius: 20px;
+    margin-top: 15px;
+
+}
+.top-tournament img {
+    width: 45px;
+    margin: 10px 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+ul.competitions{
+    padding: 0px;
+}
+span.competition-cell-status-name.btn.btn-sm.btn-ss {
+    position: absolute;
+    background-color: #b3994c;
+    color: #dfdfdf;
+    min-height: 35px;
+    min-width: 100px;
+    bottom: 17px;
+    right: 10px;
+
+}
+    </style>
+</head>
+
+<body class="dark">
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                        <a class="navbar-brand" href="https://rsoccerstreams.net">
+
+                            <img width="250" height="75" alt="Soccer Streams" class="img-fluid my-3"
+                                src="./img/sslogo.webp">
+
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://rsoccerstreams.net/league/champions-league/1">Champions League
+                                    </a>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://rsoccerstreams.net/league/premier-league/3">Premier League </a>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://rsoccerstreams.net/league/la-liga/194">La Liga </a>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://rsoccerstreams.net/league/bundesliga/36">Bundesliga </a>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://rsoccerstreams.net/league/serie-a/136">Serie A </a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br class="">
+    <main class="container contentContain">
+
+        <div class="row ml-1 mr-1 pt-2 mb-2">
+            <div style="flex:1">
+                <a target="_blank" href="https://rsoccerstreams.net" class="other-site">
+                    <div>
+                        <div class="icon">
+                            <img width="25" height="25" loading="lazy" src="https://rsoccerstreams.net/images/icons/futbol-solid.svg?v2">
+                        </div>
+                        <div class="site-name">
+                            Soccer
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div style="flex:1">
+                <a target="_blank" href="https://www.nflbite.com" class="other-site">
+                    <div>
+                        <div class="icon">
+                            <img width="25" height="25" loading="lazy" src="https://rsoccerstreams.net/images/icons/football-ball-solid.svg?v2">
+                        </div>
+                        <div class="site-name">
+                            NFL
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div style="flex:1">
+                <a target="_blank" href="https://stream.nbabite.com" class="other-site">
+                    <div>
+                        <div class="icon">
+                            <img width="25" height="25" loading="lazy" src="https://rsoccerstreams.net/images/icons/basketball-ball-solid.svg?v2">
+                        </div>
+                        <div class="site-name">
+                            NBA
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div style="flex:1">
+                <a target="_blank" href="https://nhlbite.com" class="other-site">
+                    <div>
+                        <div class="icon">
+                            <img width="25" height="25" loading="lazy" src="https://rsoccerstreams.net/images/icons/hockey-puck-solid.svg?v2">
+                        </div>
+                        <div class="site-name">
+                            NHL
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div style="flex:1">
+                <a target="_blank" href="https://mlbbite.net" class="other-site">
+                    <div>
+                        <div class="icon">
+                            <img width="25" height="25" loading="lazy" src="https://rsoccerstreams.net/images/icons/baseball-ball-solid.svg?v2">
+                        </div>
+                        <div class="site-name">
+                            MLB
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div style="flex:1">
+                <a target="_blank" href="https://live1.formula1stream.cc" class="other-site">
+                    <div>
+                        <div class="icon">
+                            <img width="25" height="25" loading="lazy" src="https://rsoccerstreams.net/images/icons/f1-helmet.png?v2">
+                        </div>
+                        <div class="site-name">
+                            F1
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div style="flex:1">
+                <a target="_blank" href="https://mmabite.net/" class="other-site">
+                    <div>
+                        <div class="icon">
+                            <img width="25" height="25" loading="lazy" src="https://rsoccerstreams.net/images/icons/glove.png?v2">
+                        </div>
+                        <div class="site-name">
+                            MMA
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div style="flex:1">
+                <a target="_blank" href="https://boxingbite.net/" class="other-site">
+                    <div>
+                        <div class="icon">
+                            <img width="25" height="25" loading="lazy" src="https://rsoccerstreams.net/images/icons/boxing-glove.svg?v2">
+                        </div>
+                        <div class="site-name">
+                            Boxing
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <nav style="display: flex;position:relative;overflow-x: auto">
+
+            <a title="Tottenham Hotspur Live Streams" class="mx-1"
+                href="https://rsoccerstreams.net/soccer-team/tottenham-hotspur/73">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/tot.webp"
+                    alt="Tottenham Hotspur Streams">
+            </a>
+
+            <a title="Manchester United Live Streams" class="mx-1"
+                href="https://rsoccerstreams.net/soccer-team/manchester-united/88">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/mu.webp"
+                    alt="Manchester United Streams">
+            </a>
+
+            <a title="Liverpool Live Streams" class="mx-1" href="https://rsoccerstreams.net/soccer-team/liverpool/137">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/lv.webp"
+                    alt="Liverpool Streams">
+            </a>
+
+            <a title="Manchester City Live Streams" class="mx-1"
+                href="https://rsoccerstreams.net/soccer-team/manchester-city/173">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/mcimage.webp"
+                    alt="Manchester City Streams">
+            </a>
+
+            <a title="Juventus Live Streams" class="mx-1" href="https://rsoccerstreams.net/soccer-team/juventus/202">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/juveimage.webp"
+                    alt="Juventus Streams">
+            </a>
+
+            <a title="Atlético Madrid Live Streams" class="mx-1"
+                href="https://rsoccerstreams.net/soccer-team/atletico-madrid/221">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/aclenimage.webp"
+                    alt="Atlético Madrid Streams">
+            </a>
+
+            <a title="Paris Saint Germain Live Streams" class="mx-1"
+                href="https://rsoccerstreams.net/soccer-team/paris-saint-germain/224">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/psjimage.webp"
+                    alt="Paris Saint Germain Streams">
+            </a>
+
+            <a title="Real Madrid Live Streams" class="mx-1"
+                href="https://rsoccerstreams.net/soccer-team/real-madrid/233">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/realimage.webp"
+                    alt="Real Madrid Streams">
+            </a>
+
+            <a title="FC Barcelona Live Streams" class="mx-1"
+                href="https://rsoccerstreams.net/soccer-team/fc-barcelona/239">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/fcbimage.webp"
+                    alt="FC Barcelona Streams">
+            </a>
+
+            <a title="Chelsea Live Streams" class="mx-1" href="https://rsoccerstreams.net/soccer-team/chelsea/306">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/chelsea.png"
+                    alt="Chelsea Streams">
+            </a>
+
+            <a title="Arsenal Live Streams" class="mx-1" href="https://rsoccerstreams.net/soccer-team/arsenal/327">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/asrimage.webp"
+                    alt="Arsenal Streams">
+            </a>
+
+            <a title="Inter Live Streams" class="mx-1" href="https://rsoccerstreams.net/soccer-team/inter/328">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/interimage.webp"
+                    alt="Inter Streams">
+            </a>
+
+            <a title="Milan Live Streams" class="mx-1" href="https://rsoccerstreams.net/soccer-team/milan/352">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/acimage.webp"
+                    alt="Milan Streams">
+            </a>
+
+            <a title="FC Bayern München Live Streams" class="mx-1"
+                href="https://rsoccerstreams.net/soccer-team/fc-bayern-munchen/355">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/bayimage.webp"
+                    alt="FC Bayern München Streams">
+            </a>
+
+            <a title="Al Nassr Live Streams" class="mx-1" href="https://rsoccerstreams.net/soccer-team/al-nassr/362">
+                <img width="45" height="45" style="object-fit: contain"
+                    src="./img/nasimage.webp"
+                    alt="Al Nassr Streams">
+            </a>
+
+        </nav>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div style="margin-top:15px" class="sv-box undefined">
+
+                    <div class="clearfix"></div>
+                    <div class="body">
+                        <div class="row">
+                            <!-- <div class="col-md-12">
+                                <div>
+                                    <ul id="mini-calendar" class="calendar-matches">
+                                        <li class="">
+                                            <div data-date-btn-action="YESTERDAY"><span class="day">Yesterday</span>
+                                            </div>
+
+                                        </li>
+                                        <li class="today selected">
+                                            <div data-date-btn-action="TODAY"><span class="day">Today</span></div>
+                                        </li>
+                                        <li class="">
+                                            <div data-date-btn-action="TOMORROW"> <span class="day">Tomorrow</span>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <div class="col-md-12">
+                                <div>
+                                    <ul id="mini-calendar" class="calendar-matches" style="justify-content: center;padding-left: 0rem;">
+                                        <li class="chooseday">
+                                            <a data-date-btn-action="YESTERDAY"><span class="day">Yesterday</span></a>
+        
+                                        </li>
+                                        <li class=" chooseday " style="margin-left: 10px; margin-right: 10px; background-color: darkslategray; ">
+                                            <a data-date-btn-action="TODAY"><span class="day">Today</span></a>
+                                        </li>
+                                        <li class="chooseday">
+                                            <a data-date-btn-action="TOMORROW"> <span class="day">Tomorrow</span></a>
+                                        </li>
+        
+                                    </ul>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:15px" class="sv-box undefined">
+
+                    <div class="clearfix"></div>
+                    <div class="body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="schedule">
+                                    <div class="top-tournament ">
+                                        <div style="padding:4px 0px;display:block;cursor:pointer">
+                                            <span><img alt="Premier League" width="86" height="50"
+                                                    src="https://streams.footybite.com/_next/image?url=https%3A%2F%2Fcdn.sportmonks.com%2Fimages%2Fsoccer%2Fleagues%2F8%2F8.png&w=128&q=35"></span>
+                                            <span class="league-name">Premier League</span>
+                                        </div>
+                                        <ul class="competitions">
+
+
+
+                                            <li>
+                                                <a target="_blank" class="competition"
+                                                    title="Leeds United vs Liverpool Live Streams"
+                                                    href="livestream1.html">
+                                                    <span style="min-height:35px;border-top:0px;" class="competition-cell-table">
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side1">
+                                                            <span class="name"> Leeds United
+                                                            </span>
+                                                        </span>
+                                                        <span class="team-logo competition-cell-table-cell"
+                                                            style="width: 40px;margin-left: 3px;"><img
+                                                                src="./img/needimage.webp"
+                                                                width="30" height="30" alt="Leeds United"></span>
+
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-score">
+                                                            <time style="text-transform: none;"
+                                                                datetime="2023-04-17 19:00:00"
+                                                                class="competition-cell-status">Starts in 3h </time>
+
+
+                                                        </span>
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side2">
+                                                            <span class="team-logo"><img
+                                                                    src="./img/lv.webp"
+                                                                    width="30" height="30" alt="Liverpool"></span>
+                                                            <span class="name"> Liverpool</span></span>
+                                                    </span>
+                                                    <span class="competition-cell-status-name btn btn-sm btn-ss"
+                                                        style="min-height: 35px;">Live Streams</span>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="top-tournament ">
+                                        <div style="padding:4px 0px;display:block;cursor:pointer">
+                                            <span><img alt="La Liga" width="86" height="50"
+                                                    src="https://rsoccerstreams.net/_next/image?url=https%3A%2F%2Fcdn.sportmonks.com%2Fimages%2Fsoccer%2Fleagues%2F564.png&w=128&q=35"></span>
+                                            <span class="league-name">La Liga</span>
+                                        </div>
+                                        <ul class="competitions">
+
+
+
+                                            <li>
+                                                <a target="_blank" class="competition"
+                                                    title="Celta de Vigo vs Mallorca Live Streams"
+                                                    href="https://rsoccerstreams.net/fixture/celta-de-vigo-mallorca/1093206">
+                                                    <span style="min-height:35px;border-top:0px;" class="competition-cell-table">
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side1">
+                                                            <span class="name"> Celta de Vigo
+                                                            </span>
+                                                        </span>
+                                                        <span class="team-logo competition-cell-table-cell"
+                                                            style="width: 40px;margin-left: 3px;"><img
+                                                                src="./img/celtaimage.webp"
+                                                                width="30" height="30" alt="Celta de Vigo"></span>
+
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-score">
+                                                            <time style="text-transform: none;"
+                                                                datetime="2023-04-17 19:00:00"
+                                                                class="competition-cell-status">Starts in 3h </time>
+
+
+                                                        </span>
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side2">
+                                                            <span class="team-logo"><img
+                                                                    src="./img/mallocimage.webp"
+                                                                    width="30" height="30" alt="Mallorca"></span>
+                                                            <span class="name"> Mallorca</span></span>
+                                                    </span>
+                                                    <span class="competition-cell-status-name btn btn-sm btn-ss"
+                                                        style="min-height: 35px;">Live Streams</span>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="top-tournament ">
+                                        <div style="padding:4px 0px;display:block;cursor:pointer">
+                                            <span><img alt="Serie A" width="86" height="50"
+                                                    src="https://rsoccerstreams.net/_next/image?url=https%3A%2F%2Fcdn.sportmonks.com%2Fimages%2F%2Fsoccer%2Fleagues%2F0%2F384.png&w=128&q=35"></span>
+                                            <span class="league-name">Serie A</span>
+                                        </div>
+                                        <ul class="competitions">
+
+
+
+                                            <li>
+                                                <a target="_blank" class="competition"
+                                                    title="Fiorentina vs Atalanta Live Streams"
+                                                    href="https://rsoccerstreams.net/fixture/fiorentina-atalanta/1093230">
+                                                    <span style="min-height:35px;border-top:0px;" class="competition-cell-table">
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side1">
+                                                            <span class="name"> Fiorentina
+                                                            </span>
+                                                        </span>
+                                                        <span class="team-logo competition-cell-table-cell"
+                                                            style="width: 40px;margin-left: 3px;"><img
+                                                                src="./img/fiorenimage.webp"
+                                                                width="30" height="30" alt="Fiorentina"></span>
+
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-score">
+                                                            <time style="text-transform: none;"
+                                                                datetime="2023-04-17 18:45:00"
+                                                                class="competition-cell-status">Starts in 3h </time>
+
+
+                                                        </span>
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side2">
+                                                            <span class="team-logo"><img
+                                                                    src="./img/ataimage.webp"
+                                                                    width="30" height="30" alt="Atalanta"></span>
+                                                            <span class="name"> Atalanta</span></span>
+                                                    </span>
+                                                    <span class="competition-cell-status-name btn btn-sm btn-ss"
+                                                        style="min-height: 35px;">Live Streams</span>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="top-tournament ">
+                                        <div style="padding:4px 0px;display:block;cursor:pointer">
+                                            <span><img alt="Liga Portugal" width="86" height="50"
+                                                    src="https://rsoccerstreams.net/_next/image?url=https%3A%2F%2Fcdn.sportmonks.com%2Fimages%2F%2Fsoccer%2Fleagues%2F14%2F462.png&w=128&q=35"></span>
+                                            <span class="league-name">Liga Portugal</span>
+                                        </div>
+                                        <ul class="competitions">
+
+
+
+                                            <li>
+                                                <a target="_blank" class="competition"
+                                                    title="Vizela vs Boavista Live Streams"
+                                                    href="https://rsoccerstreams.net/fixture/vizela-boavista/1093266">
+                                                    <span style="min-height:35px;border-top:0px;" class="competition-cell-table">
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side1">
+                                                            <span class="name"> Vizela
+                                                            </span>
+                                                        </span>
+                                                        <span class="team-logo competition-cell-table-cell"
+                                                            style="width: 40px;margin-left: 3px;"><img
+                                                                src="./img/vizeimage.webp"
+                                                                width="30" height="30" alt="Vizela"></span>
+
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-score">
+                                                            <time style="text-transform: none;"
+                                                                datetime="2023-04-17 19:15:00"
+                                                                class="competition-cell-status">Starts in 4h </time>
+
+
+                                                        </span>
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side2">
+                                                            <span class="team-logo"><img
+                                                                    src="./img/boaviimage.webp"
+                                                                    width="30" height="30" alt="Boavista"></span>
+                                                            <span class="name"> Boavista</span></span>
+                                                    </span>
+                                                    <span class="competition-cell-status-name btn btn-sm btn-ss"
+                                                        style="min-height: 35px;">Live Streams</span>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="top-tournament ">
+                                        <div style="padding:4px 0px;display:block;cursor:pointer">
+                                            <span><img alt="La Liga 2" width="86" height="50"
+                                                    src="https://rsoccerstreams.net/_next/image?url=https%3A%2F%2Fcdn.sportmonks.com%2Fimages%2Fsoccer%2Fleagues%2F23%2F567.png&w=128&q=35"></span>
+                                            <span class="league-name">La Liga 2</span>
+                                        </div>
+                                        <ul class="competitions">
+
+
+
+                                            <li>
+                                                <a target="_blank" class="competition"
+                                                    title="Levante vs Mirandés Live Streams"
+                                                    href="https://rsoccerstreams.net/fixture/levante-mirandes/1093218">
+                                                    <span style="min-height:35px;border-top:0px;" class="competition-cell-table">
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side1">
+                                                            <span class="name"> Levante
+                                                            </span>
+                                                        </span>
+                                                        <span class="team-logo competition-cell-table-cell"
+                                                            style="width: 40px;margin-left: 3px;"><img
+                                                                src="./img/levanimage.webp"
+                                                                width="30" height="30" alt="Levante"></span>
+
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-score">
+                                                            <time style="text-transform: none;"
+                                                                datetime="2023-04-17 19:00:00"
+                                                                class="competition-cell-status">Starts in 3h </time>
+
+
+                                                        </span>
+                                                        <span
+                                                            class="competition-cell-table-cell competition-cell-side2">
+                                                            <span class="team-logo"><img
+                                                                    src="./img/mỉanimage.webp"
+                                                                    width="30" height="30" alt="Mirandés"></span>
+                                                            <span class="name"> Mirandés</span></span>
+                                                    </span>
+                                                    <span class="competition-cell-status-name btn btn-sm btn-ss"
+                                                        style="min-height: 35px;">Live Streams</span>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <h1>SOCCER STREAMS</h1>
+                    <p>
+                    </p>
+                    <h2>Reddit Soccer Streams | Live Football Streams</h2>
+                    <p>Reddit Soccer Streams are a new way to watch soccer games without cable. The site
+                        highlights the best soccer streams from around the world.</p>
+                    <p>In this section, I will introduce Reddit Soccer Streams and its features. Reddit Soccer
+                        Streams is a website that allows users to watch soccer from all over the world. Users
+                        can view live games from their computer, tablet, or phone. Users can also browse
+                        archived videos from the past in case they missed a game in real time.</p>
+                    <p>
+                        Reddit Soccer Streams is a subreddit which provides soccer streams for free.
+                    </p>
+
+                    <h3>Reddit Soccer Streams</h3>
+                    <p>
+                        Soccer streams are a great way to get your fix of soccer when you can't be in front of the TV.
+                        Reddit is one of the best places to find links to live soccer streams.
+                    </p>
+                    <p>There are a number of subreddits dedicated exclusively to soccer. One of the most popular is
+                        /r/soccerstreams, which has over 130,000 subscribers and posts links to live soccer matches from
+                        all around the world.</p>
+                    <h3>How to Watch Football on Reddit</h3>
+                    <p>The best part about watching football on Reddit is that you can find any game you want
+                        without having to pay for cable TV. All you need is a computer or mobile device with an
+                        internet connection and you’re good to go!</p>
+                    <p>You can find live streams of football matches, highlights and even analysis of games that
+                        have already happened. This is a great way to watch football without having to pay for
+                        cable or satellite TV.</p>
+                    <h3>Soccer Live Streams</h3>
+                    <p>Streaming soccer games online has many benefits, but the most important one is that you
+                        don’t have to miss out on any action while you are away from home. This is especially
+                        useful for people who want to watch their favorite team all over the world.</p>
+                    <h3>SoccerStreams</h3>
+                    <p>Soccer streaming is the process of viewing a soccer match without a Pay-TV subscription,
+                        through an online streaming service. Soccer is the most watched sport in the world and
+                        being able to stream it without any additional cost is becoming a very popular
+                        option.</p>
+                    <h3>Find Soccer streams links</h3>
+                    <p>The term soccerstreams can be interpreted in many different ways. It can refer to online
+                        streaming, stream games, or simply streaming. However, this article will discuss the
+                        benefits of watching soccer matches online.</p>
+                    <p>Users can post links to live soccer games and other users will vote on the best link to
+                        watch.</p>
+                    <p>Reddit live football stream</p>
+                    <h4>Watching Football Online &amp; How to Watch Soccer Streams on Reddit </h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="margin-top:15px" class="sv-box undefined">
+                    <div class="header">
+                        <h3 class="title">Blog</h3>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+
+                                    <article>
+                                        <a href="https://rsoccerstreams.net/blog/the-future-of-football-what-changes-can-we-expect-in-the-next-decade"
+                                            class="card  bg-dark mb-3 blog-item">
+                                            <img loading="lazy" width="380" height="214" style="object-fit: contain"
+                                                class="card-img-top"
+                                                src="https://scdn.dev/images/blog/the-future-of-football-what-changes-can-we-expect-in-the-next-decade.webp?v2"
+                                                alt="future of football">
+                                            <div class="card-body">
+                                                <div style="font-weight: bold;" class="card-title">The Future of
+                                                    Football: What Changes Can We Expect in the Next Decade</div>
+                                                <p style="font-size: 14px" class="card-text">Football is one of the
+                                                    sports which has seen several changes throughout the decades. From
+                                                    goal-line technology to enhanc...</p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article>
+                                        <a href="https://rsoccerstreams.net/blog/the-biggest-upsets-in-football-david-vs-goliath-matches"
+                                            class="card  bg-dark mb-3 blog-item">
+                                            <img loading="lazy" width="380" height="214" style="object-fit: contain"
+                                                class="card-img-top"
+                                                src="https://scdn.dev/images/blog/the-biggest-upsets-in-football-david-vs-goliath-matches.webp?v2"
+                                                alt="france vs senegal">
+                                            <div class="card-body">
+                                                <div style="font-weight: bold;" class="card-title">The Biggest Upsets in
+                                                    Football: David vs. Goliath Matches</div>
+                                                <p style="font-size: 14px" class="card-text">In football, the David vs.
+                                                    Goliath matches became highly popular. Controversies like these keep
+                                                    football fans on their t...</p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article>
+                                        <a href="https://rsoccerstreams.net/blog/football-and-politics-how-sports-can-influence-society"
+                                            class="card  bg-dark mb-3 blog-item">
+                                            <img loading="lazy" width="380" height="214" style="object-fit: contain"
+                                                class="card-img-top"
+                                                src="https://scdn.dev/images/blog/football-and-politics-how-sports-can-influence-society.webp?v2"
+                                                alt="">
+                                            <div class="card-body">
+                                                <div style="font-weight: bold;" class="card-title">Football and
+                                                    Politics: How Sports Can Influence Society</div>
+                                                <p style="font-size: 14px" class="card-text">“A win by a nation in
+                                                    football is a matter of pride for that country.” This statement
+                                                    depicts the bond betwe...</p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+            </div>
+        </div>
+
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer style="background: rgb(31, 31, 31);margin: 0;" class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <div class="" id="backlinks">
+                            <div class="justify-content-center navbar-nav" style="width:100%">
+                                <p>
+
+                                    <a target="_blank" href="https://totalsportk.org">Totalsportek</a> |
+                                    <a target="_blank" href="https://streams.footybite.com">Footybite</a> |
+                                    <a target="_blank" href="https://mmabite.app">MMA Streams</a> |
+                                    <a target="_blank" href="https://boxingbite.net">Boxing Streams</a> |
+                                    <a target="_blank" href="https://sportsurge.club">Sportsurge</a> |
+                                    <a target="_blank" href="https://www.totalsportek.to">Total sportek</a> |
+                                    <a target="_blank" href="https://official.nflstreams.to">NFL Streams</a> |
+                                    <a target="_blank" href="https://f1bite.app">F1 Streams</a> |
+                                    <a target="_blank" href="https://hesgoal1.com">Hesgoal</a> |
+                                    <a target="_blank" href="https://live1.formula1stream.cc">Formula 1 Streams</a> |
+
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </nav>
+                    <hr>
+                    <div class="text-center"></div>
+                    <p style="color:var(--main-color);text-align:justify">
+                    </p>
+                    <div class="clearfix"></div>
+                    <div>
+                        <div class="row justify-content-center">
+                            <div class=" col-md-6 col-md-offset-3">
+                                <p class="text-center">Copyrights © 2022. All rights
+                                    reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $('[data-date-btn-action]').on('click', function () {
+            var action = $(this).data('date-btn-action')
+            $('#mini-calendar').find('.selected').removeClass('selected')
+            $(this).parent().addClass('selected')
+            $.ajax({
+                url: '/loadEventsDate?date=' + action,
+                type: 'GET',
+                dataType: 'text',
+                success: function (data) {
+                    console.log(data)
+                    $('#schedule').html(data)
+                }
+            })
+        })
+    </script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QJ34283RPP"></script>
+    <script>function gtag() {
+            dataLayer.push(arguments)
+        }
+
+        window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-QJ34283RPP")</script>
+
+
+</body>
+
+</html>
